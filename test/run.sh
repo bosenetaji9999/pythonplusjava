@@ -29,6 +29,17 @@ exit $ret
 fi
 rm -rf buildret
 fi
+
+
+if [ $ret -ne 0 ]; then
+exit $
+if [ $ret -ne 0 ]; then
+exit $ret
+fi
+rm -rf target
+
+./gradlew build
+ret=$?
 rm -rf target
 
 ./gradlew build
